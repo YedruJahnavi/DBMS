@@ -1,0 +1,25 @@
+1.
+      select * 
+      from emp
+2.
+      select * 
+      from emp 
+      where DEPTNO = 10
+3.
+      select * 
+      from emp 
+      where DEPTNO <> 30
+4.
+      SELECT count(*) 
+      FROM emp
+5.
+      SELECT * 
+      FROM emp 
+      order by SAL desc
+6.
+      SELECT * 
+      FROM emp 
+      WHERE ROWNUM <= 5 
+7.
+      
+      
