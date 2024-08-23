@@ -20,6 +20,10 @@
       SELECT * 
       FROM emp 
       WHERE ROWNUM <= 5 
-7.
+10.
       
+      SELECT *
+      FROM emp
+      WHERE MGR IN(7698,7566) AND SAL > 1500
+
       
