@@ -25,5 +25,19 @@
       SELECT *
       FROM emp
       WHERE MGR IN(7698,7566) AND SAL > 1500
+11.
+      SELECT * 
+      FROM emp 
+      WHERE SAL < (SELECT SAL 
+    		      FROM emp 
+    		      WHERE ENAME = 'FORD')
+14.
+      SELECT DISTINCT JOB
+      FROM emp
+15.
+      
+      
+
+
 
       
