@@ -34,8 +34,42 @@
 14.
       SELECT DISTINCT JOB
       FROM emp
-15.
+16.
+      select ENAME, DEPTNO
+      FROM emp
+      where COMM <> 0;     
+21.
+      SELECT ENAME
+      FROM emp
+      WHERE ENAME LIKE 'J_%S'
+23.  
+      SELECT *
+      FROM emp
+      WHERE JOB <> 'PRESIDENT' AND JOB <> 'MANAGER';
+24. 
+      SELECT MAX(SAL)
+      FROM emp;
+25. 
+      SELECT AVG(SAL)
+      FROM emp
+      WHERE JOB = 'SALESMAN';
+26.
+      SELECT ENAME
+      FROM emp
+      WHERE ENAME LIKE '_L%'
+28.
+      SELECT DNAME
+      FROM dept
+      WHERE DEPTNO IN
+	      ( SELECT DEPTNO
+          	FROM emp
+          	GROUP BY DEPTNO
+          	HAVING COUNT(*) = 3);
+
+
       
+
+
       
 
 
